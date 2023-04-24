@@ -1,11 +1,9 @@
-:root {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
+
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(249, 219, 173);
+  margin: 0;
+  padding:0;
 }
 header {
   position: relative;
@@ -108,7 +106,6 @@ nav ul li ul {
   background-color:rgba(255, 255,255,0.5) ;
 }
 .modal-content-panel {
-  position: relative;
   background: white;
   top: 10%;
   width: 80%;
