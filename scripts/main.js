@@ -33,14 +33,14 @@ function showModal () {
  modalPanel.classList.add('visible');
 }
 function hideModal() {
-  let backgroundLayer = docuemnt.querySelector('.modal-background');
-  let modalContent = document.querySelector('.modal-contral-panel');
+  let backgroundLayer = document.querySelector('.modal-background');
+  let modalContent = document.querySelector('.modal-content-panel');
   modalPanel.removeChild(modalContent);
   modalPanel.removeChild(backgroundLayer);
   modalPanel.classList.remove('visible');
 }
 function onKeydown (event) {
-    if (key === "Escape") {
+    if (event.key === "Escape") {
         hideModal();
     }
 }
@@ -50,7 +50,7 @@ window.addEventListener('resize',() => {
         menuDropdown.style.right='20px';
         sideTray.style.display = 'none';
     } else {
-        menuDropdown.style.right ='auto';
+        menuDropdown.style.left ='auto';
         menuDropdown.style.right ='0';
         sideTray.style.display ='block';
     }
