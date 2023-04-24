@@ -29,8 +29,19 @@ function showModal () {
 
  document.addEventListener('keydown',onKeydown);
 }
-function onKeydown {
+function onKeydown (event) {
     if (key === "Escape") {
         hideModal();
     }
 }
+window.addEventListener('resize',() => {
+    if( window.innerWidth >=736 ) {
+        menuDropdown.style.left = 'auto';
+        menuDropdown.style.right='20px';
+        sideTray.style.display = 'none';
+    } else {
+        menuDropdown.style.right ='auto';
+        menuDropdown.style.right ='0';
+        sideTray.style.display ='block';
+    }
+});
