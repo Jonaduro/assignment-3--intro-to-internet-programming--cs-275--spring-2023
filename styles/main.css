@@ -5,10 +5,10 @@
 }
 body {
   font-family: 'Open Sans', sans-serif;
-  background-color: blanchedalmond;
+  background-color: rgb(249, 219, 173);
 }
 header {
-  position: fixed;
+  position: relative;
   top: 0;
   right:0;
   left: 0;
@@ -74,8 +74,7 @@ nav ul li ul a {
   border-radius: 50px;
   border-color: white;
 }
-@media (max-width:736px) {
-nav {
+nav{
 top: auto;
 bottom: 0;
 flex-direction: row;
@@ -85,7 +84,6 @@ width: 100%;
 padding: 10px;
 background-color: brown;
 border-radius: 50px ;
-}
 }
 nav ul{
   flex-direction: row;
