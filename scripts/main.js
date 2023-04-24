@@ -13,7 +13,6 @@ if (event.key ==="Escape")  {
 hideModal();
    }
 });
-
 function toggleMenuDropdown () {
     menuDropdown.classList.toggle('visible');
 }

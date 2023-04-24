@@ -1,4 +1,3 @@
-
 body {
   font-family: 'Open Sans', sans-serif;
   background-color: rgb(249, 219, 173);
@@ -16,7 +15,7 @@ header {
   border-radius: 50px;
 }
 main {
-  margin: 125px 20px;
+  margin: 100px 20px;
 }
 
 ul {
@@ -49,7 +48,7 @@ nav ul{
   list-style: none;
   display: flex;
   flex-direction: column;
-  margin-top: 10px;
+
 }
 nav ul li {
 position: relative;
@@ -72,10 +71,11 @@ nav ul li ul a {
   border-radius: 50px;
   border-color: white;
 }
+@media (max-width: 736px) {}
 nav{
 top: auto;
 bottom: 0;
-flex-direction: row;
+flex-direction: column;
 justify-content: center;
 align-items: center;
 width: 100%;
@@ -84,7 +84,7 @@ background-color: brown;
 border-radius: 50px ;
 }
 nav ul{
-  flex-direction: row;
+  flex-direction: column;
   margin-top:10px;
 }
 nav ul li {
@@ -110,7 +110,7 @@ nav ul li ul {
   top: 10%;
   width: 80%;
   height: 80%;
-  left: 10%;
+  position: relative;
   border-radius: 25px;
 }
 p {
