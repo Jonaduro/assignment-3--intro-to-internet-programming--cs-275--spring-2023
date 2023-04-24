@@ -40,4 +40,56 @@ nav a {
   color: white;
   background-color: rgb(red, green, blue);
   text-decoration: none;
+}
+nav a:hover {
+  background-color: rgb(red, green, blue);
+}
+nav ul{
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  margin-top: 10px;
+}
+nav ul li {
+position: relative;
+width: 150px;
+background-color: #fff;
+margin-bottom: 5px;
+}
+nav ul li:hover ul {
+visibility: visible;
+}
+nav ul li ul {
+  position: absolute;
+  left: 100%;
+  top: 0;
+  visibility: hidden;
+}
+nav ul li ul a {
+  height: 48px;
+  line-height: 48px;
+  border-radius: 50px;
+  border-color: white;
+}
+@media (max-width:736px) {
+nav{
+top: auto;
+bottom: 0;
+flex-direction: row;
+justify-content: center;
+align-items: center;
+width: 100%;
+padding: 10px;
+background-color: brown;
+border-radius: 50px ;
+}
+}
+nav ul{
+  flex direction: row;
+  margin-top
+}
+nav ul li {
+  margin-right: 10px;
+  margin-bottom: 0;
+}
 
