@@ -24,4 +24,13 @@ function showModal () {
  modalContent.appendChild(header);
  modalContent.appendChild(paragraph);
  modalPanel.appendChild(modalContent);
+
+ backgroundLayer.addEventListener('click', hideModal);
+
+ document.addEventListener('keydown',onKeydown);
+}
+function onKeydown {
+    if (key === "Escape") {
+        hideModal();
+    }
 }
