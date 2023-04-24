@@ -1,0 +1,24 @@
+{
+  "name": "assignment-3--intro-to-internet-programming--cs-275--spring-2023",
+  "version": "1.0.0",
+  "description": "☞ **Plagiarism in any form will result in failing the entire course. You’ve been duly warned.** ☜",
+  "main": "gulpfile.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "jonaduro"
+  },
+  "keywords": [
+    "package"
+  ],
+  "author": "jonaduro",
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^8.0.0",
+    "gulp-cli": "^2.3.0",
+    "gulp-sass": "^5.1.0"
+  }
+}

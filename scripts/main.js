@@ -3,9 +3,11 @@ let showModalButton = document.getElementById('show-modal');
 let menuDropdown = document.getElementById('menu-dropdown');
 let sideTray = document.getElementById('sidetray');
 let modalPanel = document.getElementById('modal-panel');
+let closeModalButton = document.getElementById('close-modal')
 
 showMenuButton.addEventListener('click', toggleMenuDropdown);
 showModalButton.addEventListener('click',showModal);
+closeModalButton.addEventListener('click',hideModal);
 
 function toggleMenuDropdown () {
     menuDropdown.classList.toggle('visible');
@@ -28,6 +30,14 @@ function showModal () {
  backgroundLayer.addEventListener('click', hideModal);
 
  document.addEventListener('keydown',onKeydown);
+ modalPanel.classList.add('visible');
+}
+function hideModal() {
+  let backgroundLayer = docuemnt.querySelector('.modal-background');
+  let modalContent = document.querySelector('.modal-contral-panel');
+  modalPanel.removeChild(modalContent);
+  modalPanel.removeChild(backgroundLayer);
+  modalPanel.classList.remove('visible');
 }
 function onKeydown (event) {
     if (key === "Escape") {
