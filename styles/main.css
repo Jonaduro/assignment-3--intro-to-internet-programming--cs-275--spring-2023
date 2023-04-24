@@ -1,0 +1,16 @@
+
+body {
+  font-family: 'Open Sans', sans-serif;
+  background-color: blanchedalmond;
+}
+
+header {
+  position: fixed;
+  top: 0;
+  right:0;
+  left: 0;
+  padding: 40px 25x 3px;
+  background-color: brown;
+  text-align: right;
+  border-radius: 50px;
+}
